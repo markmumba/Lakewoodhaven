@@ -9,13 +9,12 @@ function EducationPrograms() {
     return (
         <main className="flex flex-col px-3 md:px-32 my-12 bg-slate-900">
             <section className="md:mt-32 w-full  max-md:max-w-full">
-                <div className="flex gap-8  max-md:flex-col max-md:gap-0 max-md:">
-                    <div>
-                        <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-1/3 h-2/3 absolute   rounded-full  max-md:mt-10 max-md:max-w-full" />
-                        <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[300px] h-[300px] mt-[22%] left-[24%] absolute   rounded-full  max-md:mt-10 max-md:max-w-full" />
-                    </div>
+                <div className="flex gap-8 static border pb-10 max-md:flex-col max-md:gap-0 max-md:">
+
+                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[30%] absolute h-[60%] object-cover rounded-full max-md:mt-10 max-md:max-w-full " />
                     <ContentCard />
                 </div>
+                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[10%] absolute h-[20%] object-cover left-[27%] rounded-full max-md:mt-10 max-md:max-w-full " />
             </section>
         </main>
     );
