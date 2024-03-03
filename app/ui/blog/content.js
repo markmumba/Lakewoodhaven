@@ -64,8 +64,8 @@ const BlogCard = ({ title, imageUrl, alt, content }) => {
     };
 
     return (
-        <div className="flex-1 w-3/4 p-2 hover:bg-amber-300   hover:rounded-3xl " onClick={toggleModal}>
-            <Image loading="lazy" src={imageUrl} alt={alt} width={500} height={500} className="grow object-cover rounded-3xl aspect-[1.89] max-md:mt-10 max-md:max-w-full" />
+        <div className="flex-1 px-10 md:w-3/4 md:p-2 hover:bg-amber-300   hover:rounded-3xl " onClick={toggleModal}>
+            <Image loading="lazy" src={imageUrl} alt={alt} width={500} height={500} className="grow object-cover aspect-[2] rounded-3xl  max-md:mt-10 max-md:max-w-full" />
             <div className="mt-5 text-xl font-semibold text-black">{title}</div>
             {showModal && <BlogModal title={title} content={content} onClose={toggleModal} />}
         </div>
@@ -80,7 +80,7 @@ const BlogModal = ({ title, content, onClose }) => {
 
     return (
         <div className="fixed inset-0 flex items-center justify-center z-10 bg-black bg-opacity-90">
-            <div className="bg-white p-20 rounded-3xl w-8/12 overflow-y-auto max-h-full">
+            <div className="bg-white p-7 md:p-20 mx-4 rounded-3xl md:w-8/12 overflow-y-auto max-h-full">
                 <h2 className="text-2xl font-semibold mb-4 border-b-2 p-3">{title}</h2>
                 <div className="">{splitContentIntoParagraphs(content)}</div>
                 <button onClick={onClose} className="mt-4 bg-slate-950 hover:bg-slate-900 text-white font-regular py-2 px-4 rounded focus:outline-none focus:shadow-outline">Close</button>
@@ -89,13 +89,11 @@ const BlogModal = ({ title, content, onClose }) => {
     );
 };
 
-
-
 function BlogSection() {
     return (
-        <section className="md:py-20 md:pl-72">
+        <section className="md:py-20 md:pl-72 py-10 ">
             <header className="w-full text-6xl font-black text-black max-md:max-w-full max-md:text-4xl">Blogs</header>
-            <div className="mt-14 w-full max-md:mt-10 max-md:max-w-full">
+            <div className="md:mt-14 w-full flex items-center"> {/* Apply flexbox and justify-center */}
                 <div className="flex flex-col  md:grid md:grid-cols-3 md:gap-5">
                     {blogs.map((blog, index) => (
                         <BlogCard key={index} title={blog.title} imageUrl={blog.imageUrl} alt={blog.alt} content={blog.content} />
@@ -105,5 +103,6 @@ function BlogSection() {
         </section>
     );
 };
+
 
 export default BlogSection;

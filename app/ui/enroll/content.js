@@ -2,7 +2,7 @@ import React from "react";
 
 // A reusable button component
 const DownloadButton = ({ children }) => (
-  <button className="justify-center self-start px-8 py-6 mt-14 text-lg font-semibold text-white whitespace-nowrap bg-emerald-800 rounded-3xl max-md:px-5 max-md:mt-10">
+  <button className="justify-center self-start ml-3 px-8 py-3 md:py-6 mt-14 text-lg font-semibold text-white whitespace-nowrap bg-emerald-800 rounded-xl ">
     {children}
   </button>
 );
@@ -10,11 +10,11 @@ const DownloadButton = ({ children }) => (
 // Main component
 function EnrollmentProcess () {
   return (
-    <main className="flex flex-col p-40 text-black ">
-      <header className="w-full text-5xl font-black max-md:max-w-full max-md:text-4xl">
+    <main className="flex flex-col md:p-40 text-black ">
+      <header className="w-full pt-8 text-5xl font-black max-md:max-w-full max-md:text-4xl">
         Enrollment process
       </header>
-      <section className="mt-14 w-full text-xl max-md:mt-10 max-md:max-w-full">
+      <section className="mt-14 w-full p-4  md:text-xl max-md:mt-10 max-md:max-w-full">
         <p>
           Explore Our Kindergarten: Take a tour of our kindergarten and learn more about our program, curriculum, and values.
         </p>

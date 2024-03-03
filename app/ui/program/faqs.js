@@ -75,7 +75,7 @@ function FAQ({ faq }) {
     };
 
     return (
-        <div className="mb-4">
+        <div className="mb-4 py-2">
             <div className="flex justify-between items-center border-b-2 p-2">
                 <h3 className="text-xl font-semibold text-slate-950">{faq.question}</h3>
                 <button onClick={toggleAnswer} className="focus:outline-none">
@@ -112,15 +112,15 @@ function FAQ({ faq }) {
                     )}
                 </button>
             </div>
-            {showAnswer && <p className="mt-2">{faq.answers}</p>}
+            {showAnswer && <p className="mt-2 text-xl font-bold">{faq.answers}</p>}
         </div>
     );
 }
 
 function FAQSection() {
     return (
-        <div className="w-full md:px-72 mx-auto my-40 ">
-            <h1 className='font-bold text-6xl py-8'>FAQ's</h1>
+        <div className="w-full md:px-72 mx-auto my-10 md:my-40 px-2">
+            <h1 className='font-bold text-3xl md:text-6xl py-8'>FAQ's</h1>
             {faqs.map((faq, index) => (
                 <FAQ key={index} faq={faq} />
             ))}

@@ -77,7 +77,7 @@ function ProgramCard({ title, description, ageGroup, frequency, duration, imgSrc
 
 function ProgramsContent() {
     return (
-        <main className="flex flex-col md:px-10 lg:px-72 mt-20 ">
+        <main className="flex flex-col px-10 md:px-10 lg:px-72 mt-20 ">
             <header className="self-start text-6xl font-bold text-black max-md:text-2xl">Programs</header>
             <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-32 flex flex-col ">
                 {programData.map((program) => (
@@ -90,7 +90,7 @@ function ProgramsContent() {
                 <Link href="/enroll">
                     <ButtonComponent
                         content="Our Enrollment process"
-                        style="px-8 py-4 bg-green-700 mt-20 w-1/3  text-white text-xl rounded-3xl"
+                        style="px-8 py-4 bg-green-700 mt-20 md:w-1/3  text-white text-xl rounded-xl"
                     />
                 </Link>
             </div>
