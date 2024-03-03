@@ -1,11 +1,14 @@
+import ProgramsContent from "../ui/program/content";
+import HeroImage from "../ui/program/hero";
 
 
 
-function Programs (){
+function Programs() {
 
     return (
         <>
-        <h1>This is the second page </h1>
+            <HeroImage />
+            <ProgramsContent />
         </>
     )
 

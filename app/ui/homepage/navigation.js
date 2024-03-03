@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/images/logo.png";
+import logo from "../../../public/images/logo.png";
 import React from 'react';
 
 const NavigationItem = ({ children }) => (
@@ -13,7 +13,7 @@ const NavigationItem = ({ children }) => (
 );
 
 const NavigationBar = () => {
-  const navigationItems = ["Home", "About us", "Programs", "Blogs", "Contact us"];
+  const navigationItems = ["Home", "About us", "program", "Blogs", "Contact us"];
 
   return (
     <nav className="flex justify-center items-center px-10 py-4 mt-3 w-full bg-amber-400 sm:px-5 sm:max-w-full">
