@@ -1,0 +1,8 @@
+
+//TODO make all functions use the function syntax 
+//TODO make the footer be light blue 
+//TODO make it mobile friendly find bugs and place where its not translating correctly 
+//TODO Add animations 
+//TODO add the downwards arrow on the hero image 
+//TODO add the navigations to the correct pages
+//TODO revamp the ui and try different things 

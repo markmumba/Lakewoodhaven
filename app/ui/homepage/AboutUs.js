@@ -7,21 +7,23 @@ import Link from "next/link";
 
 function AboutSection() {
     return (
-        <main className="flex flex-col px-3 md:px-32 my-12">
-            <header className="self-center text-6xl font-bold text-black max-md:text-4xl">
-                About us
-            </header>
-            <section className="md:mt-32 w-full  max-md:max-w-full">
-                <div className="flex gap-8  max-md:flex-col max-md:gap-0 max-md:">
-                    <ContentCard
-                        title="Nurturing Space"
-                        content1="At Lakewood Havens, we are devoted to create a nurturing space where young minds blossom through the enriching principles of Montessori education. We have believes that are rooted in a culture of caregiving and having a strong emphasis on holistic child development."
-                        content2=" Our mission is driven by a genuine commitment to excellence, care, and the unique development of every child who enters our doors. And our loving teachers build warm bonds with each child through care, affection, patience and respect."
-                    />
-                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" />
-                </div>
-            </section>
-        </main>
+        <div id="aboutus" >
+            <main className="flex flex-col px-3 md:px-32 my-12">
+                <header className="self-center text-6xl font-bold text-black max-md:text-4xl">
+                    About us
+                </header>
+                <section className="md:mt-32 w-full  max-md:max-w-full">
+                    <div className="flex gap-8  max-md:flex-col max-md:gap-0 max-md:">
+                        <ContentCard
+                            title="Nurturing Space"
+                            content1="At Lakewood Havens, we are devoted to create a nurturing space where young minds blossom through the enriching principles of Montessori education. We have believes that are rooted in a culture of caregiving and having a strong emphasis on holistic child development."
+                            content2=" Our mission is driven by a genuine commitment to excellence, care, and the unique development of every child who enters our doors. And our loving teachers build warm bonds with each child through care, affection, patience and respect."
+                        />
+                        <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" />
+                    </div>
+                </section>
+            </main>
+        </div>
     );
 }
 

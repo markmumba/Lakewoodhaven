@@ -1,5 +1,6 @@
 import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import { motion } from "framer-motion"
 
 const serif = Source_Serif_4({ subsets: ["latin"] });
 

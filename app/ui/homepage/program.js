@@ -9,7 +9,7 @@ function EducationPrograms() {
     return (
         <main className="flex flex-col px-3 md:px-32 my-12 bg-slate-900">
             <section className="md:mt-32 w-full  max-md:max-w-full">
-                <div className="flex gap-8 static border pb-10 max-md:flex-col max-md:gap-0 max-md:">
+                <div className="flex gap-8 static  pb-10 max-md:flex-col max-md:gap-0 max-md:">
 
                     <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[30%] absolute h-[60%] object-cover rounded-full max-md:mt-10 max-md:max-w-full " />
                     <ContentCard />
@@ -32,8 +32,8 @@ function ContentCard({ title, content1, content2 }) {
                     <div className="border-b-4 p-4">Kindergarten 2</div>
 
                 </div>
-                <Link href="/">
-                    <button className="self-center mt-14 text-sm md:text-xl text-white bg-amber-400 rounded-lg px-6 py-3 max-md:mt-5">Learn  more</button>
+                <Link href="/program">
+                    <button className="self-center mt-14 text-sm md:text-xl text-white bg-amber-400 rounded-lg px-6 py-3 max-md:mt-5 hover:bg-amber-600">Learn  more</button>
                 </Link>
             </section>
         </article>
