@@ -1,4 +1,3 @@
-
 import Contact from "../ui/homepage/Footer"
 import HeaderSection from "../ui/homepage/navigation"
 

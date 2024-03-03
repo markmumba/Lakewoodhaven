@@ -82,8 +82,8 @@ function ProgramsContent() {
                 </React.Fragment>
             ))}
             </div>
-            <div className="border border-black text-center">
-            <button className="px-8 py-4 bg-green-700 mt-20 w-1/3  text-white text-xl rounded-xl ">Our Enrollment process </button>
+            <div className="text-center">
+            <button className="px-8 py-4 bg-green-700 mt-20 w-1/3  text-white text-xl rounded-3xl ">Our Enrollment process </button>
             </div>
         </main>
     );

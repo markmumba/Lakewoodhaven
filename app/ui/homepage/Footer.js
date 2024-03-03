@@ -4,7 +4,7 @@ import logo from "../../../public/images/logo.png"
 function Contact() {
 
     return (
-        <div id="contacts" className=" bg-slate-900 text-slate-300 mt-20">
+        <div id="contacts" className=" bg-slate-900 text-white mt-20">
             <div className="bg-white rounded-full w-full"></div>
             <div className=" grid md:flex md:p-20  ">
 
