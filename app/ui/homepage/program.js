@@ -3,6 +3,7 @@ import Image from "next/image";
 import image1 from "../../../public/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg"
 import image2 from "../../../public/images/KeyBenefits-759fnsydngutjy8nkrunsk5rb6cokt1e6cs6q2xfekk.png"
 import Link from "next/link";
+import ButtonComponent from "./button";
 
 
 function EducationPrograms() {
@@ -11,10 +12,10 @@ function EducationPrograms() {
             <section className="md:mt-32 w-full  max-md:max-w-full">
                 <div className="flex gap-8 static  pb-10 max-md:flex-col max-md:gap-0 max-md:">
 
-                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[30%] absolute h-[60%] object-cover rounded-full max-md:mt-10 max-md:max-w-full " />
+                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow hidden w-[30%] absolute h-[60%] object-cover rounded-full md:block " />
                     <ContentCard />
                 </div>
-                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[10%] absolute h-[20%] object-cover left-[27%] rounded-full max-md:mt-10 max-md:max-w-full " />
+                <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[10%] hidden md:block absolute h-[20%] object-cover left-[27%] rounded-full " />
             </section>
         </main>
     );
@@ -33,7 +34,9 @@ function ContentCard({ title, content1, content2 }) {
 
                 </div>
                 <Link href="/program">
-                    <button className="self-center mt-14 text-sm md:text-xl text-white bg-amber-400 rounded-lg px-6 py-3 max-md:mt-5 hover:bg-amber-600">Learn  more</button>
+                    <ButtonComponent 
+                    content="Learn more"
+                    style="self-center mt-14 text-sm md:text-xl text-white bg-amber-400 rounded-lg px-6 py-3 max-md:mt-5 hover:bg-amber-600"/>
                 </Link>
             </section>
         </article>

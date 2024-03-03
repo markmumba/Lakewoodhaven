@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ButtonComponent from "../homepage/button";
 
 const programData = [
     {
@@ -55,16 +56,18 @@ const programData = [
 
 function ProgramCard({ title, description, ageGroup, frequency, duration, imgSrc, altText }) {
     return (
-        <section className="flex flex-col grow px-9 py-8 mt-10  text-black bg-amber-400 rounded-3xl ">
-            <Image src={imgSrc} alt={altText} width={400} height={400} className="aspect-[1.5] w-full  object-center rounded-3xl max-md:max-w-full" />
-            <h3 className=" mt-10 ml-3.5 text-2xl font-bold">{title}</h3>
-            <p className="mt-3.5 ml-3.5 text-lg ">{description}</p>
-            <div className="flex gap-5 justify-between self-center px-8 py-3.5 mt-11 max-w-full text-lg text-white rounded-3xl bg-slate-900 w-[486px]">
-                <div className="flex gap-5 justify-between items-center flex-wrap">
-                    <div className="self-stretch my-auto">{ageGroup}</div>
-                    <div className="self-stretch w-px bg-white h-[74px]" />
-                    <div className="self-stretch my-auto">{frequency}</div>
-                    <div className="w-px bg-white h-[74px]" />
+        <section className="flex flex-col px-9 py-8 mt-10 text-black bg-amber-400 rounded-3xl ">
+            <div className="flex-shrink-0">
+                <Image src={imgSrc} alt={altText} width={300} height={300} className="aspect-[1.5] w-full object-center rounded-3xl max-md:max-w-full" />
+                <h3 className="mt-10 ml-3.5 text-2xl font-bold">{title}</h3>
+                <p className="mt-3.5 ml-3.5 text-base lg:text-lg ">{description}</p>
+            </div>
+            <div className="flex gap-5 justify-between self-center px-2 py-1 mt-11 max-w-full text-sm lg:text-lg text-white rounded-3xl bg-slate-900 w-[400px]">
+                <div className="flex gap-2 lg:gap-5 justify-between items-center flex-wrap flex-grow">
+                    <div className="my-auto">{ageGroup}</div>
+                    <div className="w-px bg-white h-[60px]" />
+                    <div className="my-auto">{frequency}</div>
+                    <div className="w-px bg-white h-[60px]" />
                     <div className="my-auto">{duration}</div>
                 </div>
             </div>
@@ -74,9 +77,9 @@ function ProgramCard({ title, description, ageGroup, frequency, duration, imgSrc
 
 function ProgramsContent() {
     return (
-        <main className="flex flex-col md:px-72 mt-20">
+        <main className="flex flex-col md:px-10 lg:px-72 mt-20 ">
             <header className="self-start text-6xl font-bold text-black max-md:text-2xl">Programs</header>
-            <div className="md:grid md:grid-cols-2 md:gap-32 flex flex-col p-2 ">
+            <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-32 flex flex-col ">
                 {programData.map((program) => (
                     <React.Fragment key={program.id}>
                         <ProgramCard {...program} />
@@ -85,7 +88,10 @@ function ProgramsContent() {
             </div>
             <div className="text-center">
                 <Link href="/enroll">
-                    <button className="px-8 py-4 bg-green-700 mt-20 w-1/3  text-white text-xl rounded-3xl ">Our Enrollment process </button>
+                    <ButtonComponent
+                        content="Our Enrollment process"
+                        style="px-8 py-4 bg-green-700 mt-20 w-1/3  text-white text-xl rounded-3xl"
+                    />
                 </Link>
             </div>
         </main>

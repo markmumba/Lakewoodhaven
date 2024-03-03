@@ -21,7 +21,7 @@ function Contact() {
                 </div>
 
                 <div className="md:pl-[30%] md:py-24">
-                    <div className="grid grid-cols-3">
+                    <div className="grid grid-cols-2 md:grid-cols-3">
                         <div className=" ">
                             <h3 className="pl-3 text-xl md:text-3xl font-medium">Quick Links</h3>
                             <ul className="">

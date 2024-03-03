@@ -7,11 +7,11 @@ import HeroImage from "../ui/program/hero";
 function Programs() {
 
     return (
-        <>
+        <div className="overflow-hidden">
             <HeroImage />
             <ProgramsContent />
             <FAQSection />
-        </>
+        </div>
     )
 
 }

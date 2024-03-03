@@ -10,7 +10,7 @@ import Contact from "./ui/homepage/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <HeaderSection />
       <Hero />
       <AboutSection />
@@ -18,7 +18,7 @@ export default function Home() {
       <BenefitsSection />
       <ContactForm />
       <Contact />
-    </>
+    </div>
   );
 
 }

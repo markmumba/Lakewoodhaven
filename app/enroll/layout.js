@@ -3,7 +3,7 @@ import HeaderSection from "../ui/homepage/navigation"
 
 export default function Layout({ children }) {
     return (
-        <div className="flex  flex-col h-screen max-md:overflow-hidden">
+        <div className="flex  flex-col h-screen ">
             <div className="w-full ">
                 <HeaderSection />
             </div>

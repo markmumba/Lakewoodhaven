@@ -3,6 +3,7 @@ import Image from "next/image";
 import image1 from "../../../public/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg"
 import image2 from "../../../public/images/KeyBenefits-759fnsydngutjy8nkrunsk5rb6cokt1e6cs6q2xfekk.png"
 import Link from "next/link";
+import ButtonComponent from "./button";
 
 
 function AboutSection() {
@@ -30,14 +31,16 @@ function AboutSection() {
 function ContentCard({ title, content1, content2 }) {
     return (
         <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-            <section className="grow justify-center px-20 pt-24 pb-12 w-full text-sm md:text-xl text-black bg-amber-400 rounded-2xl max-md:px-5 max-md:pt-10 max-md:mt-10 max-md:max-w-full">
+            <section className="grow justify-center px-20 pt-24 pb-12 w-full text-sm md:text-lg text-black bg-amber-400 rounded-2xl max-md:px-5 max-md:pt-10 max-md:mt-10 max-md:max-w-full">
                 {content1}
                 <br></br>
                 <br></br>
                 {content2}
                 <br></br>
                 <Link href="/">
-                    <button className="self-center mt-10 text-sm md:text-xl text-white bg-slate-900 rounded-lg px-5 py-2 max-md:mt-5">Find out more</button>
+                    <ButtonComponent
+                        content="Find out more"
+                        style="self-center mt-10 text-sm md:text-xl text-white bg-slate-900 rounded-lg px-5 py-2 max-md:mt-5" />
                 </Link>
             </section>
         </article>

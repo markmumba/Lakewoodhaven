@@ -24,26 +24,26 @@ const benefitsData = [
 
 function BenefitCard({ imgSrc, imgAlt, title, description }) {
   return (
-    <figure className="flex flex-col grow items-center md:px-14 py-12 w-full text-center text-black bg-amber-400 rounded-2xl  sm:mt-10 sm:w-full">
-      <Image loading="lazy" src={imgSrc} alt={imgAlt} className="max-w-full aspect-square w-28"
+    <figure className="flex flex-col grow shadow-lg items-center  px-2 md:px-4 py-16  text-center text-black bg-amber-400 rounded-2xl mt-10">
+      <Image loading="lazy" src={imgSrc} alt={imgAlt} className="max-w-full aspect-square w-20"
         width={300}
         height={300} />
       <figcaption>
         <h3 className="mt-14 text-2xl font-bold">{title}</h3>
-        <p className="self-stretch mt-5 text-xl">{description}</p>
+        <p className="self-stretch mt-5 text-lg">{description}</p>
       </figcaption>
     </figure>
   )
 }
 
-function  BenefitsSection  ()  {
+function BenefitsSection() {
   return (
-    <main className="flex flex-col px-5 py-40">
-      <h2 className="self-center text-6xl  font-bold text-black max-md:text-2xl">Why choose us</h2>
-      <section className="mt-16 w-full sm:mt-10">
-        <div className="flex max-md:flex-col md:space-x-8 sm:gap-0">
+    <main className="flex flex-col  px-5 md:py-20">
+      <h2 className="self-center text-3xl md:text-5xl  font-bold text-black">Why choose us</h2>
+      <section className="md:mt-16 w-full   sm:mt-10">
+        <div className="flex max-md:flex-col md:space-x-20 md:px-28   sm:gap-0">
           {benefitsData.map((benefit, index) => (
-            <div key={index} className="flex flex-col w-1/3 sm:w-full">
+            <div key={index} className="flex flex-col w-full ">
               <BenefitCard {...benefit} />
             </div>
           ))}
