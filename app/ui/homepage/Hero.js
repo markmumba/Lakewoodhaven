@@ -6,20 +6,20 @@ import heroimage from "../../../public/images/merlin_148147761_ffacc318-39d9-4a0
 
 function Hero() {
   return (
-    <section className="flex overflow-hidden relative flex-col items-start px-12 py-12 text-white min-h-[793px] max-md:px-5">
+    <section className="flex overflow-hidden relative flex-col items-start px-12 py-12 text-white h-[500px] md:h-[793px] max-md:px-5">
       <Image
         src={heroimage}
         alt="Montessori themed background"
         className="object-cover absolute inset-0 size-full"
         loading="lazy"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-600 opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900 opacity-90"></div>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1}}
-        className="relative mt-48 text-7xl italic font-bold  max-md:max-w-full max-md:text-4xl">
+        className="relative mt-20 md:mt-48 text-7xl  font-bold  max-md:max-w-full max-md:text-4xl">
         Montessori
       </motion.div>
       <motion.div

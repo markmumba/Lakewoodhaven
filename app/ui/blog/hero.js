@@ -15,7 +15,7 @@ function TopImage() {
         <div className="w-full">
             <Image src={teacher}
                 alt="Montessori themed background"
-                className="object-cover inset-0 h-[500px]"
+                className="object-cover inset-0 h-[200px] md:h-[500px]"
                 loading="lazy"
             />
         </div>

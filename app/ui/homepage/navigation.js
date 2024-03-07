@@ -2,14 +2,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/images/logo.png";
-import React ,{useEffect} from 'react';
 
 
 function NavigationBar() {
   return (
-    <nav className="flex justify-center items-center px-10 py-4 mt-3 w-full bg-amber-400 sm:px-5 sm:max-w-full">
-      <div className="flex gap-2 justify-between max-w-full w-[630px] sm:flex-wrap font-semibold">
-        <div className="grow text-center rounded-lg hover:bg-slate-900  hover:text-white text-xl">
+    <nav className="flex  justify-center items-center px-2 md:px-10 py-4 mt-3 w-full bg-amber-400 sm:px-5 sm:max-w-full">
+      <div className="flex  flex-wrap  gap-2 md:justify-between max-w-full w-[630px] sm:flex-wrap font-semibold">
+        <div className="grow text-center  rounded-lg hover:bg-slate-900  hover:text-white text-xl">
           <Link href="/">
             Home
           </Link>

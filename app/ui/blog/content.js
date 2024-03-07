@@ -92,7 +92,7 @@ const BlogModal = ({ title, content, onClose }) => {
 function BlogSection() {
     return (
         <section className="md:py-20 md:pl-72 py-10 ">
-            <header className="w-full text-6xl font-black text-black max-md:max-w-full max-md:text-4xl">Blogs</header>
+            <header className="w-full text-6xl text-center font-black text-black max-md:max-w-full max-md:text-4xl">Blogs</header>
             <div className="md:mt-14 w-full flex items-center"> {/* Apply flexbox and justify-center */}
                 <div className="flex flex-col  md:grid md:grid-cols-3 md:gap-5">
                     {blogs.map((blog, index) => (

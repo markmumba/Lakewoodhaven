@@ -7,16 +7,16 @@ function Contact() {
     return (
         <div id="contactus" className=" bg-slate-900 text-white mt-20">
             <div className="bg-white rounded-full w-full"></div>
-            <div className=" grid md:flex md:p-20  justify-between  ">
+            <div className=" grid gap-5 px-10 md:flex md:p-20  justify-between  ">
 
-                <div className=" p-4 md:py-20 md:px-10">
+                <div className=" pl-20 md:py-20 md:px-10">
                     <Image src={logo} width={120} />
                     <p className="text-sm md:text-base font-medium">The Angels Paradise <br />TheMontessori Home</p>
                     <div className="flex  gap-6 pt-3  md:text-base">
                         <i className="bi bi-facebook"></i>
                         <i className="bi bi-instagram"></i>
                         <i className="bi bi-twitter"></i>
-                        <i className="bi bi-github"></i>
+                        <i className="bi bi-youtube"></i>
                     </div>
                 </div>
 
