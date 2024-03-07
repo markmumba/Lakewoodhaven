@@ -15,7 +15,7 @@ function NavigationBar() {
         </div>
 
         <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
-          <Link href="#aboutus">
+          <Link href="/about">
             About Us
           </Link>
         </div>

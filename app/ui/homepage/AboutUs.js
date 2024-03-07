@@ -37,7 +37,7 @@ function ContentCard({ title, content1, content2 }) {
                 <br></br>
                 {content2}
                 <br></br>
-                <Link href="/">
+                <Link href="/about">
                     <ButtonComponent
                         content="Find out more"
                         style="self-center mt-10 text-sm md:text-xl text-white bg-slate-900 rounded-lg px-5 py-2 max-md:mt-5" />
