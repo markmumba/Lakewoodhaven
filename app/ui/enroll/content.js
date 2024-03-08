@@ -1,14 +1,31 @@
+'use client'
 import React from "react";
+import ButtonComponent from "../homepage/button";
 
 // A reusable button component
-const DownloadButton = ({ children }) => (
-  <button className="justify-center self-start ml-3 px-8 py-3 md:py-6 mt-14 text-lg font-semibold text-white whitespace-nowrap bg-emerald-800 rounded-xl ">
-    {children}
-  </button>
-);
+const FILE_URL = "/images/hands.png"
+function DownloadButton({ children }) {
+  function handleDownload() {
+    const handbookUrl = FILE_URL
+
+    const anchor = document.createElement('a')
+    anchor.href = handbookUrl
+    anchor.download = 'student handbook.png'
+    anchor.click();
+    anchor.remove()
+
+  }
+  return (
+    <ButtonComponent
+      func={() => { handleDownload() }}
+      style="justify-center self-start ml-3 px-8 py-3 md:py-6 mt-14 text-lg font-semibold text-white whitespace-nowrap bg-emerald-800 rounded-xl"
+      content={children}
+    />
+  )
+};
 
 // Main component
-function EnrollmentProcess () {
+function EnrollmentProcess() {
   return (
     <main className="flex flex-col md:p-40 text-black ">
       <header className="w-full pt-8 text-5xl font-black max-md:max-w-full max-md:text-4xl">
@@ -67,7 +84,7 @@ function EnrollmentProcess () {
           Payment of the enrollment fee to secure your child's spot.
         </p>
       </section>
-      <DownloadButton>Download form</DownloadButton>
+      <DownloadButton>Download Parents Handbook</DownloadButton>
     </main>
   );
 };
