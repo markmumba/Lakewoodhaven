@@ -30,7 +30,7 @@ function BenefitCard({ imgSrc, imgAlt, title, description }) {
         height={300} />
       <figcaption>
         <h3 className="mt-14 text-2xl font-bold">{title}</h3>
-        <p className="self-stretch mt-5 md:text-lg">{description}</p>
+        <p className="self-stretch mt-5 text-sm md:text-base">{description}</p>
       </figcaption>
     </figure>
   )
