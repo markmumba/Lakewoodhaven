@@ -8,7 +8,7 @@ import ButtonComponent from "./button";
 
 function EducationPrograms() {
     return (
-        <main className="flex flex-col px-3 md:px-32 my-12 bg-slate-900">
+        <main className="flex flex-col px-3 md:px-32 my-12 bg-gradient-to-tr from-slate-900  to-slate-700">
             <section className="md:mt-32 w-full  max-md:max-w-full">
                 <div className="flex gap-8 static  pb-10 max-md:flex-col max-md:gap-0 max-md:">
 
