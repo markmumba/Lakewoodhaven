@@ -64,7 +64,7 @@ const BlogCard = ({ title, imageUrl, alt, content }) => {
     };
 
     return (
-        <div className="flex-1 px-10 md:w-3/4 md:p-2 hover:bg-amber-300   hover:rounded-3xl " onClick={toggleModal}>
+        <div className="flex-1 px-10  xl:w-3/4 md:p-2 hover:bg-amber-300   hover:rounded-3xl " onClick={toggleModal}>
             <Image loading="lazy" src={imageUrl} alt={alt} width={500} height={500} className="grow object-cover aspect-[2] rounded-3xl  max-md:mt-10 max-md:max-w-full" />
             <div className="mt-5 text-xl font-semibold text-black">{title}</div>
             {showModal && <BlogModal title={title} content={content} onClose={toggleModal} />}
@@ -91,7 +91,7 @@ const BlogModal = ({ title, content, onClose }) => {
 
 function BlogSection() {
     return (
-        <section className="md:py-20 md:pl-72 py-10 ">
+        <section className="md:py-20 md:pl-20 xl:pl-72 py-10 ">
             <header className="w-full text-6xl text-center font-black text-black max-md:max-w-full max-md:text-4xl">Blogs</header>
             <div className="md:mt-14 w-full flex items-center"> {/* Apply flexbox and justify-center */}
                 <div className="flex flex-col  md:grid md:grid-cols-3 md:gap-5">

@@ -18,9 +18,9 @@ function Hero() {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1}}
-        className="relative mt-20 md:mt-48 text-7xl  font-bold  max-md:max-w-full max-md:text-4xl">
-        Montessori
+        transition={{ duration: 1 }}
+        className="relative mt-20 md:mt-48 text-6xl  font-bold  max-md:max-w-full max-md:text-4xl">
+        Your Montessori home
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -28,8 +28,10 @@ function Hero() {
         transition={{ duration: 1.5 }}
       >
         <p className="relative mt-8 md:text-2xl max-md:mt-10 max-md:max-w-full">
-          Nurturing independence, fostering curiosity, <br></br>
-          and empowering every child to become the architect of their own learning journey.
+          Here to nature young minds, boost their independence, self-motivation, 
+          <br></br>
+          and learning process for a brighter future, <br></br>
+          Discover the elegance of Montessori education with us.
         </p>
       </motion.div>
     </section>

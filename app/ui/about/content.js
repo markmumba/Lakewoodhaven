@@ -7,10 +7,10 @@ function AboutUsContent() {
             <header className="w-full pt-8 text-4xl text-center  font-black max-md:max-w-full max-md:text-4xl">
                 Mission Statement
             </header>
-            <section className="mt-14 w-full p-4   relative md:text-xl max-md:mt-10 max-md:max-w-full overflow-hidden ">
+            <section className="mt-14 w-full    relative md:text-xl max-md:mt-10 max-md:max-w-full overflow-hidden ">
                 <div className="static">
                     <div className="absolute h-60 w-60 rounded-full bg-amber-400 max-md:-left-36 -z-20 "></div>
-                    <div className="absolute h-60 w-60 rounded-full bg-slate-900 max-md:-right-36 right-0 -z-10  top-[60%] max-md:top-[20%]"></div>
+                    <div className="absolute h-60 w-60 rounded-full bg-slate-900  max-md:-right-36 right-0 -z-10  top-[60%] max-md:top-[20%]"></div>
                     <div className="absolute h-60 w-60 rounded-full bg-amber-400 max-md:-bottom-[0%] max-md:-right-36  -bottom-[50%] right-20 -z-10 "></div>
                 </div>
                 <div className="flex max-md:flex-col max-md:space-y-16">
@@ -52,7 +52,7 @@ function AboutUsContent() {
                             learning new things everyday while having an amazing experience.
                         </p>
                     </div>
-                    <div className="px-2 md:px-20">
+                    <div className="px-2 lg:px-20">
                         <div className="py-2">
                             <h1 className="text-2xl font-bold">Nurturing Environment:</h1>
                             <p className="">Prioritize creating a warm, welcoming, and nurturing atmosphere where children feel

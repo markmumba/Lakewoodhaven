@@ -13,12 +13,13 @@ function AboutSection() {
                 <header className="self-center text-6xl font-bold text-black max-md:text-4xl">
                     About us
                 </header>
-                <section className="md:mt-32 w-full  max-md:max-w-full">
-                    <div className="flex gap-8  max-md:flex-col max-md:gap-0 max-md:">
+                <section className=" md:mt-10 lg:mt-32 w-full  max-md:max-w-full">
+                    <div className="flex gap-8  max-lg:flex-col max-md:gap-0 ">
                         <ContentCard
                             title="Nurturing Space"
-                            content1="At Lakewood Havens, we are devoted to create a nurturing space where young minds blossom through the enriching principles of Montessori education. We have believes that are rooted in a culture of caregiving and having a strong emphasis on holistic child development."
-                            content2=" Our mission is driven by a genuine commitment to excellence, care, and the unique development of every child who enters our doors. And our loving teachers build warm bonds with each child through care, affection, patience and respect."
+                            content1="At Lakewood Havens, we are devoted to create a nurturing space where young minds blossom through the enriching principles of Montessori education. We have believes that are rooted in a culture of caregiving a strong emphasis on holistic child development and child-centred learning."
+                            content2=" Our mission is driven by a genuine commitment to excellence, care, and the unique development of every child who enters our doors. And our loving teachers build warm bonds with each child through care, affection, patience and respect"
+                            content3="We aim to nurture curiosity, cultivate confidence, and inspiring lifelong learners making us one of the most elegant kindergartens in Nairobi."
                         />
                         <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" />
                     </div>
@@ -28,14 +29,16 @@ function AboutSection() {
     );
 }
 
-function ContentCard({ title, content1, content2 }) {
+function ContentCard({ title, content1, content2, content3 }) {
     return (
-        <article className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+        <article className="flex flex-col lg:w-6/12 max-md:ml-0 max-md:w-full">
             <section className="grow justify-center px-20 pt-24 pb-12 w-full text-sm md:text-lg text-black bg-amber-400 rounded-2xl max-md:px-5 max-md:pt-10 max-md:mt-10 max-md:max-w-full">
                 {content1}
                 <br></br>
                 <br></br>
                 {content2}
+                <br></br>
+                {content3}
                 <br></br>
                 <Link href="/about">
                     <ButtonComponent
@@ -49,7 +52,7 @@ function ContentCard({ title, content1, content2 }) {
 
 function ImageCard({ imageUrl, imageAlt }) {
     return (
-        <figure className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+        <figure className="flex flex-col lg:ml-5 lg:w-6/12 max-md:ml-0 max-md:w-full">
             <Image
                 loading="lazy"
                 src={imageUrl}

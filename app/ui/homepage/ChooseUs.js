@@ -41,7 +41,7 @@ function BenefitsSection() {
     <main className="flex flex-col  px-5 md:py-20">
       <h2 className="self-center text-3xl md:text-5xl  font-bold text-black">Why choose us</h2>
       <section className="md:mt-16 w-full   sm:mt-10">
-        <div className="flex max-md:flex-col md:space-x-20 md:px-28   sm:gap-0">
+        <div className="flex max-lg:flex-col lg:space-x-20 md:px-16 lg:px-28   sm:gap-0">
           {benefitsData.map((benefit, index) => (
             <div key={index} className="flex flex-col w-full ">
               <BenefitCard {...benefit} />
