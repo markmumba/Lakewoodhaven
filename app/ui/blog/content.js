@@ -1,11 +1,9 @@
-'use client';
-import Image from "next/image";
-import React, { useState } from "react";
+import BlogCard from "./blogcomponent";
 
 const blogs = [
     {
         title: "Nurturing Responsibility At Home: Different Ways You Can Apply Montessori Principles At Home",
-        imageUrl: "/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg",
+        imageUrl: "/images/responsibility.jpeg",
         alt: "Math related activities",
         content: `Montessori principles have been implemented in schools for many years to promote independence among children. However, these principles can also be used in a home setting to encourage self-sufficiency in your child. Empowering your child with independence is one of the most valuable gifts you can give them. To help you get started, here are some tips for creating a Montessori-inspired space in your own home.
 1. Safety and well-being: Give your child the gift of a safe and accessible environment by setting up child-friendly spaces. With these spaces, you can rest assured that your child is free to explore and play without the risk of harm. Don't wait any longer to provide your child with the safety and security they deserve. Provide low shelves, a child-sized table and chair, and a place to hang their coat. This will encourage them to be more independent and take responsibility for their own belongings.
@@ -45,7 +43,7 @@ Keep up the great work!
     },
     {
         title: "The Importance of Play-Based Learning in Kindergarten",
-        imageUrl: "/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg",
+        imageUrl: "/images/playing.jpeg",
         alt: "Kids playing and learning",
         content: `Kindergarten is a foundational stage in a child's educational journey, and play-based learning plays a crucial role in shaping their development and fostering a lifelong love of learning. "The Importance of Play-Based Learning in Kindergarten" delves into the significance of incorporating play-based activities into the kindergarten curriculum and highlights the numerous benefits it offers to young learners.
 1. Promotes Social and Emotional Development: Play-based learning provides opportunities for children to interact with their peers, develop social skills, and learn to navigate social situations effectively. Through cooperative play, sharing, and turn-taking, kindergarten students learn important interpersonal skills such as communication, empathy, and teamwork, which are essential for building positive relationships both inside and outside the classroom.
@@ -57,7 +55,7 @@ In conclusion, "The Importance of Play-Based Learning in Kindergarten" underscor
     },
     {
         title: "Building Social Skills: How Kindergarten Fosters Friendship and Cooperation",
-        imageUrl: "/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg",
+        imageUrl: "/images/laughing.jpg",
         alt: "Children building social skills",
         content: `Kindergarten serves as a pivotal stage in a child's social development, providing opportunities for them to build essential social skills such as friendship, cooperation, and empathy. "Building Social Skills: How Kindergarten Fosters Friendship and Cooperation" explores the significance of kindergarten in nurturing positive social interactions and fostering meaningful relationships among young children.
 1. Creating a Nurturing Environment: Kindergarten classrooms are designed to be warm, welcoming, and inclusive spaces where children feel safe to express themselves and interact with their peers. Educators create a nurturing environment that encourages kindness, respect, and empathy, laying the foundation for positive social interactions and friendships to flourish.
@@ -70,45 +68,14 @@ In conclusion, "Building Social Skills: How Kindergarten Fosters Friendship and 
 ];
 
 
-const BlogCard = ({ title, imageUrl, alt, content }) => {
-    const [showModal, setShowModal] = useState(false);
 
-    const toggleModal = () => {
-        setShowModal(!showModal);
-    };
-
-    return (
-        <div className="flex-1 px-10  xl:w-3/4 md:p-2 hover:bg-amber-300   hover:rounded-3xl " onClick={toggleModal}>
-            <Image loading="lazy" src={imageUrl} alt={alt} width={500} height={500} className="grow object-cover aspect-[2] rounded-3xl  max-md:mt-10 max-md:max-w-full" />
-            <div className="mt-5 text-xl font-semibold text-black">{title}</div>
-            {showModal && <BlogModal title={title} content={content} onClose={toggleModal} />}
-        </div>
-    );
-};
-const BlogModal = ({ title, content, onClose }) => {
-    const splitContentIntoParagraphs = (content) => {
-        return content.split('\n').map((paragraph, index) => (
-            <p key={index} className="mb-4">{paragraph}</p>
-        ));
-    };
-
-    return (
-        <div className="fixed inset-0 flex items-center justify-center z-10 bg-black bg-opacity-90">
-            <div className="bg-white p-7 md:p-20 mx-4 rounded-3xl md:w-8/12 overflow-y-auto max-h-full">
-                <h2 className="text-2xl font-semibold mb-4 border-b-2 p-3">{title}</h2>
-                <div className="">{splitContentIntoParagraphs(content)}</div>
-                <button onClick={onClose} className="mt-4 bg-slate-950 hover:bg-slate-900 text-white font-regular py-2 px-4 rounded focus:outline-none focus:shadow-outline">Close</button>
-            </div>
-        </div>
-    );
-};
 
 function BlogSection() {
     return (
-        <section className="md:py-20 md:pl-20 xl:pl-72 py-10 ">
+        <section className="md:py-20 md:pl-20  py-10 ">
             <header className="w-full text-6xl text-center font-black text-black max-md:max-w-full max-md:text-4xl">Blogs</header>
             <div className="md:mt-14 w-full flex items-center"> {/* Apply flexbox and justify-center */}
-                <div className="flex flex-col  md:grid md:grid-cols-3 md:gap-5">
+                <div className="flex flex-col  md:grid md:grid-cols-4 grid-flow-col md:gap-5">
                     {blogs.map((blog, index) => (
                         <BlogCard key={index} title={blog.title} imageUrl={blog.imageUrl} alt={blog.alt} content={blog.content} />
                     ))}
