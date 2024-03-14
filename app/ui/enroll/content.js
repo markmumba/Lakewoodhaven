@@ -3,7 +3,8 @@ import React from "react";
 import ButtonComponent from "../homepage/button";
 
 // A reusable button component
-const FILE_URL = "/images/hands.png"
+const FILE_URL = "/pdf/LAKEWOOD HAVENS HANDBOOK.pdf"
+
 function DownloadButton({ children }) {
   function handleDownload() {
     const handbookUrl = FILE_URL

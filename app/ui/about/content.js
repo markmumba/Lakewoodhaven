@@ -4,7 +4,7 @@
 function AboutUsContent() {
     return (
         <>
-            <header className="w-full pt-8 text-4xl text-center  font-black max-md:max-w-full max-md:text-4xl">
+            <header className="w-full pt-8 text-6xl text-center  font-black max-md:max-w-full max-md:text-4xl">
                 Mission Statement
             </header>
             <section className="mt-14 w-full    relative md:text-xl max-md:mt-10 max-md:max-w-full overflow-hidden ">
