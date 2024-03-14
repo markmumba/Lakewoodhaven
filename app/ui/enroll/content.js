@@ -11,7 +11,7 @@ function DownloadButton({ children }) {
 
     const anchor = document.createElement('a')
     anchor.href = handbookUrl
-    anchor.download = 'student handbook.png'
+    anchor.download = 'student handbook.pdf'
     anchor.click();
     anchor.remove()
 
@@ -39,15 +39,11 @@ function EnrollmentProcess() {
         <p>
           Check Eligibility: Ensure your child meets the age eligibility requirements for enrollment. Typically, children must be at least 4 or 5 years old by a certain date to enroll in kindergarten.
         </p>
-        <p>
-          Complete Online Application: Fill out our online enrollment application form. Provide basic information about your child, your family, and your contact details.
-        </p>
+
         <p>
           Submit Required Documents: Upload or submit required documents, including:
           <br />
           - Child's birth certificate or proof of age
-          <br />
-          - Proof of residency (e.g., utility bill or lease agreement)
           <br />
           - Immunization records or exemption forms
           <br />
@@ -74,15 +70,11 @@ function EnrollmentProcess() {
         <p>
           Requirements for Enrollment:
           <br />
-          Child must be at least 4 or 5 years old by [specific date].
-          <br />
-          Completed online enrollment application form.
-          <br />
+          Child must be at least 4 or 5 years old.
           Submission of required documents, including birth certificate, proof of residency, immunization records, and any legal guardianship documents.
           <br />
           Attendance at an enrollment meeting with our team.
           <br />
-          Payment of the enrollment fee to secure your child's spot.
         </p>
       </section>
       <DownloadButton>Download Parents Handbook</DownloadButton>
