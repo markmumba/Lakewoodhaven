@@ -1,7 +1,10 @@
-import { Source_Serif_4 } from "next/font/google";
+import { Source_Serif_4, Playfair_Display, EB_Garamond } from "next/font/google";
+
 import "./globals.css";
 
 const serif = Source_Serif_4({ subsets: ["latin"] });
+const Playfair = Playfair_Display({ subsets: ["latin"] });
+const garamond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata = {
   title: "LakeWood Haven Kindergarten",
@@ -9,9 +12,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={serif.className}>{children}</body>
     </html>
   );
+
 }

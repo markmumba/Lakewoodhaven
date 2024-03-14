@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import teacher from "../../../public/images/UPT3C5L6GYYUC3RXDGRWA45PFQ.jpg"
+import teacher from "../../../public/images/programhero.jpg"
 
 function HeroImage() {
     return (

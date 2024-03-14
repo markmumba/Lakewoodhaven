@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image1 from "../../../public/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg"
-import image2 from "../../../public/images/KeyBenefits-759fnsydngutjy8nkrunsk5rb6cokt1e6cs6q2xfekk.png"
+import  image from "../../../public/images/kids-stuying.jpeg"
 import Link from "next/link";
 import ButtonComponent from "./button";
 
@@ -21,7 +20,7 @@ function AboutSection() {
                             content2=" Our mission is driven by a genuine commitment to excellence, care, and the unique development of every child who enters our doors. And our loving teachers build warm bonds with each child through care, affection, patience and respect"
                             content3="We aim to nurture curiosity, cultivate confidence, and inspiring lifelong learners making us one of the most elegant kindergartens in Nairobi."
                         />
-                        <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" />
+                        <ImageCard imageUrl={image} imageAlt="inside lakewood havens school" />
                     </div>
                 </section>
             </main>

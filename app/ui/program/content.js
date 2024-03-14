@@ -25,7 +25,7 @@ const programData = [
         ageGroup: "5-6yrs",
         frequency: "5 days weekly",
         duration: "2hr periods",
-        imgSrc: "/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg",
+        imgSrc: "/images/image-9.jpeg",
         altText: "Nursery for children"
     },
     {
@@ -37,7 +37,7 @@ const programData = [
         frequency: "5 days weekly",
         duration: "2hr periods",
         imgSrc:
-            '/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg',
+            '/images/images.jpeg',
         altText: "Junior Kg Classroom"
     },
     {
@@ -49,7 +49,7 @@ const programData = [
         frequency: "5 days weekly",
         duration: "2hr periods",
         imgSrc:
-            '/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg',
+            '/images/100616_CIF-194-scaled.jpg',
         altText: "Children in a Day Care"
     },
 ];

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import teacher from "../../../public/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg"
+import teacher from "../../../public/images/hero-scaled.jpg"
 
 function HeroImage() {
     return (

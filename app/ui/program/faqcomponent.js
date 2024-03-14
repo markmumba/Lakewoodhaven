@@ -3,8 +3,10 @@
 
 import { useState } from "react";
 
-function FAQ({ faq, isFirst }) {
-    const [showAnswer, setShowAnswer] = useState(isFirst);
+
+
+function FAQ({ faq }) {
+    const [showAnswer, setShowAnswer] = useState(false);
 
     const toggleAnswer = () => {
         setShowAnswer(!showAnswer);

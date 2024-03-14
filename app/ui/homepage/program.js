@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import image1 from "../../../public/images/merlin_148147761_ffacc318-39d9-4a00-a977-3ee521f049be-superJumbo.jpg"
-import image2 from "../../../public/images/KeyBenefits-759fnsydngutjy8nkrunsk5rb6cokt1e6cs6q2xfekk.png"
+import image1 from "../../../public/images/image-9.jpeg"
+import image2 from "../../../public/images/raisehand.jpg"
 import Link from "next/link";
 import ButtonComponent from "./button";
 
@@ -12,7 +12,7 @@ function EducationPrograms() {
             <section className="lg:mt-32 w-full ">
                 <div className="flex md:gap-4 lg:gap-8 static  pb-10 max-md:flex-col max-md:gap-0 max-md:">
 
-                    <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow  hidden w-[40%] h-[25%] lg:w-[30%] md:mt-28 lg:mt-0 absolute lg:h-[60%] object-cover rounded-full md:block " />
+                    <ImageCard imageUrl={image2} imageAlt="inside lakewood havens school" style="grow  hidden w-[40%] h-[25%] lg:w-[30%] md:mt-28 lg:mt-0 absolute lg:h-[60%] object-cover rounded-full md:block " />
                     <ContentCard />
                 </div>
                 <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[10%] hidden lg:block absolute h-[20%] object-cover left-[27%] rounded-full " />
