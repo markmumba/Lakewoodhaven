@@ -27,7 +27,7 @@ function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <p className="relative mt-8 md:text-2xl max-md:mt-10 max-md:max-w-full">
+        <p className="relative mt-8 md:text-xl max-md:mt-10 max-md:max-w-full">
           Here to nature young minds, boost their independence, self-motivation, 
           <br></br>
           and learning process for a brighter future, <br></br>

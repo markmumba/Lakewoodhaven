@@ -126,7 +126,7 @@ const faqs = [
 
 function FAQSection() {
   return (
-    <div className="w-full md:px-20 lg:px-72 mx-auto my-10 md:my-40 px-2">
+    <div className="w-full md:px-20  2xl:px-72 mx-auto my-10 md:my-40 px-2">
       <h1 className='font-bold text-3xl md:text-6xl py-8'>FAQ's</h1>
       {faqs.map((faq, index) => (
         <FAQ key={index} faq={faq}  />

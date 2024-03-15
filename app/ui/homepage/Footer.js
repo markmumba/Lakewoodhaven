@@ -22,7 +22,7 @@ function Contact() {
 
 
                 <div className="md:pl-[10%] lg:pl-[30%] md:py-10 lg:py-24">
-                    <div className="grid grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-2 2xl:grid-cols-3">
                         <div className=" ">
                             <h3 className="pl-3 text-xl md:text-3xl font-medium">Quick Links</h3>
                             <ul className="">

@@ -8,14 +8,14 @@ import ButtonComponent from "./button";
 
 function EducationPrograms() {
     return (
-        <main className="flex flex-col px-3 lg:px-32 my-12 bg-gradient-to-tr from-slate-900  to-slate-700">
-            <section className="lg:mt-32 w-full ">
-                <div className="flex md:gap-4 lg:gap-8 static  pb-10 max-md:flex-col max-md:gap-0 max-md:">
+        <main className="flex flex-col px-3 2xl:px-32 my-12 bg-gradient-to-tr from-slate-900  to-slate-700">
+            <section className="lg:mt-32 w-full relative">
+                <div className="flex md:gap-4 lg:gap-8  pb-10 max-md:flex-col max-md:gap-0 max-md:">
 
-                    <ImageCard imageUrl={image2} imageAlt="inside lakewood havens school" style="grow  hidden w-[40%] h-[25%] lg:w-[30%] md:mt-28 lg:mt-0 absolute lg:h-[60%] object-cover rounded-full md:block " />
+                    <ImageCard imageUrl={image2} imageAlt="inside lakewood havens school" style="grow hidden w-[40%] h-[25%]  lg:w-[50%] lg:h-[100%] xl:w-[40%] 2xl:w-[30%]  absolute object-cover rounded-full lg:block " />
                     <ContentCard />
                 </div>
-                <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[10%] hidden lg:block absolute h-[20%] object-cover left-[27%] rounded-full " />
+                <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[12%] hidden lg:block absolute lg:h-[30%] 2xl:h-[40%] object-cover top-[80%] lg:left-[27%] 2xl:left-[20%] rounded-full " />
             </section>
         </main>
     );
@@ -34,9 +34,9 @@ function ContentCard({ title, content1, content2 }) {
 
                 </div>
                 <Link href="/program">
-                    <ButtonComponent 
-                    content="Learn more"
-                    style="self-center mt-14 text-sm md:text-xl text-white bg-amber-400 rounded-lg px-6 py-3 max-md:mt-5 hover:bg-amber-600"/>
+                    <ButtonComponent
+                        content="Learn more"
+                        style="self-center mt-14 text-sm md:text-xl text-white bg-amber-400 rounded-lg px-6 py-3 max-md:mt-5 hover:bg-amber-600" />
                 </Link>
             </section>
         </article>

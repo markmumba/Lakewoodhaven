@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import  image from "../../../public/images/kids-stuying.jpeg"
+import image from "../../../public/images/teacherkids.jpeg"
 import Link from "next/link";
 import ButtonComponent from "./button";
 
@@ -8,11 +8,11 @@ import ButtonComponent from "./button";
 function AboutSection() {
     return (
         <div id="aboutus" >
-            <main className="flex flex-col px-3 xl:px-32 my-12">
+            <main className="flex flex-col px-3 2xl:px-32  my-12">
                 <header className="self-center text-6xl font-bold text-black max-md:text-4xl">
                     About us
                 </header>
-                <section className=" md:mt-10 lg:mt-32 w-full  max-md:max-w-full">
+                <section className=" md:mt-16 2xl:mt-32 w-full  max-md:max-w-full">
                     <div className="flex gap-8  max-lg:flex-col max-md:gap-0 ">
                         <ContentCard
                             title="Nurturing Space"
@@ -31,7 +31,7 @@ function AboutSection() {
 function ContentCard({ title, content1, content2, content3 }) {
     return (
         <article className="flex flex-col lg:w-6/12 max-md:ml-0 max-md:w-full">
-            <section className="grow justify-center px-20 pt-24 pb-12 w-full text-sm md:text-lg text-black bg-amber-400 rounded-2xl max-md:px-5 max-md:pt-10 max-md:mt-10 max-md:max-w-full">
+            <section className="grow justify-center px-10 pt-24 pb-12 w-full text-sm md:text-base 2xl:text-lg text-black bg-amber-400 rounded-2xl max-md:px-5 max-md:pt-10 max-md:mt-10 max-md:max-w-full">
                 {content1}
                 <br></br>
                 <br></br>
@@ -56,7 +56,7 @@ function ImageCard({ imageUrl, imageAlt }) {
                 loading="lazy"
                 src={imageUrl}
                 alt={imageAlt}
-                className="grow w-full   rounded-xl max-md:mt-10 max-md:max-w-full"
+                className="grow w-full  object-cover rounded-xl max-md:mt-10 max-md:max-w-full"
             />
         </figure>
     );

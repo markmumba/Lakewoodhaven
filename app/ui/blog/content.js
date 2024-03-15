@@ -75,7 +75,7 @@ function BlogSection() {
         <section className="md:py-20 md:pl-20  py-10 ">
             <header className="w-full text-6xl text-center font-black text-black max-md:max-w-full max-md:text-4xl">Blogs</header>
             <div className="md:mt-14 w-full flex items-center"> {/* Apply flexbox and justify-center */}
-                <div className="flex flex-col  md:grid md:grid-cols-4 grid-flow-col md:gap-5">
+                <div className="flex flex-col  md:grid  md:grid-cols-3 xl:grid-cols-4 xl:grid-flow-col md:gap-5">
                     {blogs.map((blog, index) => (
                         <BlogCard key={index} title={blog.title} imageUrl={blog.imageUrl} alt={blog.alt} content={blog.content} />
                     ))}
