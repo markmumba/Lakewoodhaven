@@ -10,7 +10,7 @@ function AboutUsContent() {
             <section className="mt-14 w-full    relative md:text-xl max-md:mt-10 max-md:max-w-full overflow-hidden ">
                 <div className="static">
                     <div className="absolute h-60 w-60 rounded-full bg-amber-400 max-md:-left-36 -z-20 "></div>
-                    <div className="absolute h-60 w-60 rounded-full bg-slate-900  max-md:-right-36 right-0 -z-10  top-[60%] max-md:top-[20%]"></div>
+                    <div className="absolute h-60 w-60 rounded-full bg-slate-700  max-md:-right-36 right-0 -z-10  top-[60%] max-md:top-[20%]"></div>
                     <div className="absolute h-60 w-60 rounded-full bg-amber-400 max-md:-bottom-[0%] max-md:-right-36  -bottom-[50%] right-20 -z-10 "></div>
                 </div>
                 <div className="flex max-md:flex-col max-md:space-y-16">

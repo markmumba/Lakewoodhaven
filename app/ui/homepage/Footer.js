@@ -1,8 +1,21 @@
+'use client';
 import Image from "next/image";
 import logo from "../../../public/images/logo.png"
 import Link from "next/link";
 
+const FILE_URL = "/pdf/LAKEWOOD HAVENS HANDBOOK.pdf"
+
 function Contact() {
+    function handleDownload() {
+        const handbookUrl = FILE_URL
+
+        const anchor = document.createElement('a')
+        anchor.href = handbookUrl
+        anchor.download = 'student handbook.pdf'
+        anchor.click();
+        anchor.remove()
+
+    }
 
     return (
         <div id="contactus" className=" bg-slate-900 text-white mt-20">
@@ -26,9 +39,9 @@ function Contact() {
                         <div className=" ">
                             <h3 className="pl-3 text-xl md:text-3xl font-medium">Quick Links</h3>
                             <ul className="">
-                                <li className="text-sm p-2 md:text-lg">Admission Process</li>
+                                <Link href="/enroll"><li className="text-sm p-2 md:text-lg">Admission Process</li></Link>
                                 <Link href="/blog"><li className="text-sm p-2 md:text-lg">Articles</li></Link>
-                                <li className="text-sm p-2 md:text-lg">Parent Handbook</li>
+                                <li onClick={() => { handleDownload() }} className="text-sm p-2 md:text-lg">Parent Handbook</li>
                             </ul>
                         </div>
                         <div className="">
