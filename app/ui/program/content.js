@@ -77,7 +77,7 @@ function ProgramCard({ title, description, ageGroup, frequency, duration, imgSrc
 
 function ProgramsContent() {
     return (
-        <main className="flex flex-col  md:px-2 lg:px-20  2xl:px-72 mt-6 md:mt-20 ">
+        <main className="flex flex-col  md:px-2 lg:px-20   mt-6 md:mt-20 ">
             <header className=" text-6xl font-bold text-black max-md:text-4xl text-center">Programs</header>
             <div className="md:grid md:grid-cols-2 md:gap-10  2xl:gap-32 flex flex-col ">
                 {programData.map((program) => (
