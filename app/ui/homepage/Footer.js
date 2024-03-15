@@ -20,7 +20,7 @@ function Contact() {
     return (
         <div id="contactus" className=" bg-slate-900 text-white mt-20">
             <div className="bg-white rounded-full w-full"></div>
-            <div className=" grid gap-5 px-3 md:flex md:p-20  justify-between  ">
+            <div className=" grid gap-5 px-3 md:flex   justify-between  ">
 
                 <div class="max-md:py-4 lg:py-20 lg:px-10 text-center  flex flex-col justify-center items-center">
                     <Image src={logo} width={140} />
