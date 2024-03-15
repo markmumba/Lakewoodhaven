@@ -8,35 +8,35 @@ function NavigationBar() {
   return (
     <nav className="flex  justify-center items-center px-4 md:px-10 py-4 mt-3 w-full bg-amber-400 sm:px-5 sm:max-w-full">
       <div className="flex  flex-wrap  gap-2 md:justify-between max-w-full w-[630px] sm:flex-wrap font-semibold">
-        <div className="grow text-center  rounded-lg hover:bg-slate-900  hover:text-white text-xl">
-          <Link href="/">
+        <Link href="/">
+          <div className="grow text-center  rounded-lg hover:bg-slate-900  hover:text-white text-xl">
             Home
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
-          <Link href="/about">
+        <Link href="/about">
+          <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
             About Us
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
-          <Link href="/program">
+        <Link href="/program">
+          <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
             Program
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
-          <Link href="/blog">
+        <Link href="/blog">
+          <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
             Blog
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
-          <Link href="#contactus">
+        <Link href="#contactus">
+          <div className="grow text-center rounded-lg hover:bg-slate-900 hover:text-white text-lg">
             Contact Us
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </nav>
   );
