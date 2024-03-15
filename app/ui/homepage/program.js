@@ -8,14 +8,14 @@ import ButtonComponent from "./button";
 
 function EducationPrograms() {
     return (
-        <main className="flex flex-col px-3 2xl:px-20 my-12 bg-gradient-to-tr from-slate-900 via-slate-900 to-slate-700">
-            <section className="lg:mt-32 w-full relative">
+        <main className="flex flex-col px-3  my-12 bg-gradient-to-tr from-slate-900 via-slate-900 to-slate-700">
+            <section className="lg:mt-32 w-full lg:px-20 relative">
                 <div className="flex md:gap-4 lg:gap-8  pb-10 max-md:flex-col max-md:gap-0 max-md:">
 
-                    <ImageCard imageUrl={image2} imageAlt="inside lakewood havens school" style="grow hidden w-[40%] h-[25%]  lg:w-[50%] lg:h-[100%] xl:w-[40%] 2xl:w-[30%]  absolute object-cover rounded-full lg:block " />
+                    <ImageCard imageUrl={image2} imageAlt="inside lakewood havens school" style="grow hidden w-[40%] h-[25%]  lg:w-[40%] lg:h-[100%] xl:w-[25%]  absolute object-cover rounded-full lg:block " />
                     <ContentCard />
                 </div>
-                <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[12%] hidden lg:block absolute lg:h-[30%] 2xl:h-[40%] object-cover top-[80%] lg:left-[27%] 2xl:left-[20%] rounded-full " />
+                <ImageCard imageUrl={image1} imageAlt="inside lakewood havens school" style="grow w-[10%] hidden xl:block absolute lg:h-[30%] 2xl:h-[40%] object-cover top-[80%] lg:left-[27%] 2xl:left-[18%] rounded-full " />
             </section>
         </main>
     );
