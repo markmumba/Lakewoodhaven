@@ -8,7 +8,7 @@ import ButtonComponent from "./button";
 function AboutSection() {
     return (
         <div id="aboutus" >
-            <main className="flex flex-col px-3 2xl:px-32  my-12">
+            <main className="flex flex-col px-3 2xl:px-20  my-12">
                 <header className="self-center text-6xl font-bold text-black max-md:text-4xl">
                     About us
                 </header>
