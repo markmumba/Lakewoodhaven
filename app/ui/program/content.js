@@ -56,19 +56,21 @@ const programData = [
 
 function ProgramCard({ title, description, ageGroup, frequency, duration, imgSrc, altText }) {
     return (
-        <section className="flex flex-col px-4 py-8 mt-10 text-black bg-amber-400 rounded-3xl lg:w-5/6 ">
+        <section className="flex flex-col px-4 py-8 mt-10 text-black bg-amber-400 rounded-3xl 2xl:w-4/6 ">
             <div className="flex-shrink-0">
-                <Image src={imgSrc} alt={altText} width={300} height={300} className=" w-full object-cover h-3/6 rounded-3xl max-md:max-w-full" />
+                <Image src={imgSrc} alt={altText} width={300} height={300} className=" w-full object-cover  rounded-3xl " />
                 <h3 className="mt-10 ml-3.5 text-2xl font-bold">{title}</h3>
                 <p className="mt-3.5 ml-3.5 text-base 2xl:text-lg  ">{description}</p>
             </div>
-            <div className="flex flex-wrap  justify-between self-center px-10 py-1 mt-11 max-w-full text-sm md:text-base 2xl:text-lg text-white rounded-3xl bg-slate-900 w-[400px]">
-                <div className="flex gap-1.5 lg:gap-5 justify-between items-center ">
-                    <div className="my-auto">{ageGroup}</div>
-                    <div className="w-px bg-white h-[60px]" />
-                    <div className="my-auto">{frequency}</div>
-                    <div className="w-px bg-white h-[60px]" />
-                    <div className="my-auto">{duration}</div>
+            <div className="flex justify-center items-center">
+                <div className="flex flex-wrap  w-fit justify-center items-center  px-10 py-1 mt-11  text-sm md:text-base 2xl:text-lg text-white rounded-3xl bg-slate-900 ">
+                    <div className="flex gap-1.5 xl:gap-5 ">
+                        <div className="my-auto">{ageGroup}</div>
+                        <div className="w-px bg-white h-[60px]" />
+                        <div className="my-auto">{frequency}</div>
+                        <div className="w-px bg-white h-[60px]" />
+                        <div className="my-auto">{duration}</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,14 +79,16 @@ function ProgramCard({ title, description, ageGroup, frequency, duration, imgSrc
 
 function ProgramsContent() {
     return (
-        <main className="flex flex-col  md:px-2 lg:px-20   mt-6 md:mt-20 ">
+        <main className="flex flex-col  md:px-2   mt-6 md:mt-20 ">
             <header className=" text-6xl font-bold text-black max-md:text-4xl text-center">Programs</header>
-            <div className="md:grid md:grid-cols-2 md:gap-10  2xl:gap-32 flex flex-col ">
-                {programData.map((program) => (
-                    <React.Fragment key={program.id}>
-                        <ProgramCard {...program} />
-                    </React.Fragment>
-                ))}
+            <div className="flex 2xl:px-20 px-6 ">
+                <div className="md:grid md:grid-cols-2 md:gap-10  flex flex-col">
+                    {programData.map((program) => (
+                        <React.Fragment key={program.id}>
+                            <ProgramCard {...program} />
+                        </React.Fragment>
+                    ))}
+                </div>
             </div>
             <div className="text-center">
                 <Link href="/enroll">
