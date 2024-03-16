@@ -10,7 +10,7 @@ const programData = [
         id: 1,
         title: "Kindegarten 1",
         description:
-            "This refers specifically to the first year of kindergarten, usually for children around 4 years old. They learn basic skills like recognizing letters, counting numbers, identifying shapes and colors, and interact with their peers in a structured play-based environment.",
+            "This refers specifically to the first year of kindergarten, usually for children around 4 years old. They learn basic skills like number work, language,reading handwriting general knowledge and Montessori activities, and interact with their peers in a structured play-based environment.",
         ageGroup: "4-5yrs",
         frequency: "5 days weekly",
         duration: "2hr periods",
@@ -21,7 +21,7 @@ const programData = [
         id: 2,
         title: "Kindergarten 2",
         description:
-            "This signifies the second year of kindergarten, for children around 5 years old. KG2 builds upon the skills learned in KG1 by introducing more complex language and math concepts, preparing them for pre-writing activities, problem-solving, and ultimately transitioning to primary school.",
+            "This signifies the second year of kindergarten, for children around 5 years old. KG2 builds  number work, language,reading handwriting general knowledge and Montessori activities and ultimately transitioning to primary school.",
         ageGroup: "5-6yrs",
         frequency: "5 days weekly",
         duration: "2hr periods",
